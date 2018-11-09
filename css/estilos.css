@@ -1,0 +1,14 @@
+
+
+body{
+	/*background: url('../imagenes/yellow_background.png') no-repeat;  PARA NO REPETIR*/
+	background: url('../img/fondo.jpg');
+	font-family: 'Trebuchet MS,',Ariasl,sans-serif;
+	color:#181818;
+}
+h3{
+	color: white;
+}
+p{
+	color: white;
+}

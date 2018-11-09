@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi TIENDA</title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+<link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.0/mapsjs-ui.css?dp-version=1533195059" />
+
+<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-core.js"></script>
+<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-service.js"></script>
+<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-ui.js"></script>
+<script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+<script type="text/javascript" src="js/mapitas.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<center><img src="img/store.png"></center>
+	<center><img src="img/separador.gif"></center>
+	<tr>
+		<center>
+		<tr><a href="mitienda.html"><img src="img/inicio.jpg"></a></tr>
+		<tr><a href="lista.html"><img src="img/lista.jpg"></a></tr>
+		<tr><a href="articulos.html"><img src="img/articulos.jpg"></a></tr>
+		<tr><a href="contacto.html"><img src="img/contacto.jpg"></a></tr>
+		</center>
+	</tr>
+</head>
+<body style="background-color:#EFF0D0;">
+		<br>
+		<h1><center>Porque comprar en nuestras tiendas ?</center></h1>
+		<br>
+	<table>
+		<tr>
+			<th><details><summary><h3>Abierto todo el tiempo</h3></summary>
+			<ul>
+				<li>Abierto las 24h del día, 7 días a la semana durante los 365 días del año.</li>
+			</ul>
+			</details>
+			<details><summary><h3>Entregamos el pedido a la hora y fecha indicadas.</h3></summary>
+			<ul>
+				<li></li>
+			</ul>
+			</details>
+			<details><summary><h3>Desde donde quieras puedes comprar</h3></summary>
+			<ul>
+				<li>Realizar tu compra en cualquier dispositivo (ordenador, móvil o tablet)</li>
+			</ul>
+			</details>
+			<details><summary><h3>Articulos Detallados</h3></summary>
+			<ul>
+				<li>Cada artículo contiene su descripción, precio e imagen ampliable.</li>
+			</ul>
+			</details>
+			</details>
+			<details><summary><h3>Aprovecha</h3></summary>
+			<ul>
+				<li>nuestras promociones son unicas y solo para la tienda online.</li>
+			</ul>
+			</details>
+			</details>
+			<details><summary><h3>Servicio especializado</h3></summary>
+			<ul>
+				<li>Este servicio es llevado a cabo por nuestro propio equipo de profesionales</li>
+			</ul>
+			</details>
+			</details>
+			<details><summary><h3>Te atendemos y asesoramos telefónicamente.</h3></summary>
+			<ul>
+				<li></li>
+			</ul>
+			</details>
+			</details>
+			<details><summary><h3>Facil de comprar con un click</h3></summary>
+			<ul>
+				<li>Fácil: Realiza tus compras de productos en un sólo clic</li>
+			</ul>
+			</details>
+			</details>
+			<details><summary><h3>Compra cómodamente en un entorno seguro.</h3></summary>
+			<ul>
+				<li></li>
+			</ul>
+			</details>
+			</details>
+			<details><summary><h3>Sin gastos de envío.</h3></summary>
+			<ul>
+				<li></li>
+			</ul>
+			</details><h1>___________________________________________________</h1></th>
+			<th><img src="img/modelo1.png" width="303px" height="513px">
+		</tr>
+		
+	</table>
+
+<h1><center>Ubicanos aqui</center></h1>  
+  <center><div id="map" style="width: 500px; height: 400px; background: grey" />
+  <script  type="text/javascript" charset="UTF-8" >
+    
+/**
+ * Moves the map to display over Berlin
+ *
+ * @param  {H.Map} map      A HERE Map instance within the application
+ */
+function moveMapToArequipa(map){
+  map.setCenter({lat:-16.429177, lng:-71.519642});
+  map.setZoom(18);
+}
+
+
+
+
+
+/**
+ * Boilerplate map initialization code starts below:
+ */
+
+//Step 1: initialize communication with the platform
+var platform = new H.service.Platform({
+  app_id: 'devportal-demo-20180625',
+  app_code: '9v2BkviRwi9Ot26kp2IysQ',
+  useHTTPS: true
+});
+var pixelRatio = window.devicePixelRatio || 1;
+var defaultLayers = platform.createDefaultLayers({
+  tileSize: pixelRatio === 1 ? 256 : 512,
+  ppi: pixelRatio === 1 ? undefined : 320
+});
+
+//Step 2: initialize a map  - not specificing a location will give a whole world view.
+var map = new H.Map(document.getElementById('map'),
+  defaultLayers.normal.map, {pixelRatio: pixelRatio});
+
+//Step 3: make the map interactive
+// MapEvents enables the event system
+// Behavior implements default interactions for pan/zoom (also on mobile touch environments)
+var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
+// Create the default UI components
+var ui = H.ui.UI.createDefault(map, defaultLayers);
+
+// Now use the map as required...
+moveMapToArequipa(map);
+  </script>
+  </center>
+</body>
+<br>
+<center><img src="img/separador.gif"></center>
+<center><strong><footer> &copy Todos los derechos reservados 2018</footer></strong>
+</center>
